@@ -67,5 +67,6 @@ func greet(w http.ResponseWriter, r *http.Request) {
 	if name == "" {
 		name = "Stranger"
 	}
+	time.Sleep(90 * time.Second)
 	fmt.Fprintf(w, "Hello2, %s!\n", name)
 }
